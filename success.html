@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <link rel ="stylesheet" href="{{url_for('static',filename='successstyle.css')}}">
+
+<script type ="text/javascript" src ="{{url_for('static',filename='successscript.js')}}">
+
+</script>
+</head>
+<body>
+{% if username =="varun" %}
+<h1>Hi {{username}} .How are you ?? </h1>
+{% else %}
+<h1> System issue </h1>
+{% endif %}
+</body>
+</html>

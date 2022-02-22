@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel ="stylesheet" href="{{url_for('static',filename='homestyle.css')}}">
+    <script>
+    alert("The page is loaded")
+    </script>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+<div>
+<form action="/submit" method='post'>
+  <label for="uname">User Name:</label><br>
+  <input type="text" id="uname" name="uname" value=" "><br>
+  <label for="pwd">Password :</label><br>
+  <input type="text" id="pwd" name="pwd" value=" "><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+
+</body>
+</html>
